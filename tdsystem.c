@@ -26,8 +26,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-
-
+#define EOF -1
+/*
 void main(){
 int tmp;
 
@@ -40,10 +40,22 @@ while (read(toto,&tmp,1)){
 	}
 close(toto);
 close(titi);
-}
+} */
+#exo 4
 
+ char getchar(int fd){ //0pour entré standard
+	int EOF=
+	int caractere;
+	if (read(fd,&caractere,1)){ return caractere;}
+	return EOF;
+		
+}
+//~ #autre option 
+//~ int c; 
+//~ return (read(fd,&c,1)?c:EOF);
 	
 	
+#exo 5
 
 
 

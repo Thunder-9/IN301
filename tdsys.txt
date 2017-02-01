@@ -1,0 +1,33 @@
+cp -r = permet de copier les dossiers
+rm -r = supprimer un dossier non vide 
+ls -R = contenue des dossiers contenue dans le dossier courant
+rm *  = supp les fichier 
+rm *.txt = supp les fichier en .txt 
+
+
+Td :
+
+exo 1
+primitive système :        équivalent bibliothèque
+-read						fopen, fscanf, fprintf fclose 
+-open
+-close
+-write
+
+
+ les appels système accède au noyau -> portabilité 
+ 
+ exo 2
+ 
+ int fd à la place file* fp
+ 
+ bibliothèque						system
+ 
+// 0 entré standard					int fd
+// 1 sortie standard					int c
+// 2 sortie erreur 					fd=open(nom,O_RDONLY)
+									read(fd,&c,1)
+									close(fd)
+									return c
+									
+exo 3 
